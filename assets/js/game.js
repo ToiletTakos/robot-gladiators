@@ -206,14 +206,14 @@ var endGame = function() {
     }
 
     //if player has more money then the high score, player has new high score!
-    if (playerInfo.money > highscore) {
+    if (playerInfo.money > highScore) {
         localStorage.setItem("highscore", playerInfo.money);
         localStorage.setItem("name", playerInfo.name);
 
         alert(playerInfo.name + " now has teh high score of " + playerInfo.money + "!");
     }
     else {
-        alert(playerInfo.name + " did not beat the high score of " + highscore + ". Maybe next time!");
+        alert(playerInfo.name + " did not beat the high score of " + highScore + ". Maybe next time!");
     }
     
     var playAgainConfirm = window.confirm("Would you like to play again?");
